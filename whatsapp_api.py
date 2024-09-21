@@ -1,4 +1,5 @@
 import os
+import time
 import json
 import requests
 import pandas as pd
@@ -6,7 +7,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 openapi_key = os.getenv("openapi_key")
-os.environ['OPENAI_API_KEY'] = openapi_key
+os.environ['OPENAI_API_KEY'] = str(openapi_key)
 
 
 def get_group_chats(group_id, token):

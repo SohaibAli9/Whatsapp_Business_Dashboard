@@ -1,0 +1,5 @@
+# To build the Docker Image
+docker build -t {image_name} .
+
+# To run the Docker Image on local, This will run it on local
+docker run docker run -p 8080:8080 {image_name}
